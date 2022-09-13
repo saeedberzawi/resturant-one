@@ -1,0 +1,91 @@
+.contact {
+  background-image: url(../../assets/hero-4.jpg);
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+.contact__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+}
+
+.contact h1 {
+  position: absolute;
+  font-size: 50px;
+  text-align: center;
+  top: 35%;
+  left: 20%;
+}
+.ovarlayal__text {
+  position: absolute;
+  font-size: 20px;
+  top: 55%;
+  left: 20%;
+  letter-spacing: 0.9px;
+}
+.text_2 {
+  margin-top: 35px;
+}
+.text_3 {
+  margin-top: 65px;
+}
+.ovarlayal__text img {
+  width: 23px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* ------------- */
+
+.getin {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.getin__touch {
+  background: var(--color-header);
+  width: 20%;
+  margin: 0 10% 30px 20%;
+  border: 7px solid black;
+  box-shadow: 0 0 12px black;
+}
+.getin__touch h2 {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.touch__in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.touch__in input {
+  /* text-align: center; */
+  background: var(--color-header);
+  /* text-indent: 20px; */
+  margin-top: 10px;
+  border: none;
+}
+.touch__in button {
+  background: black;
+  color: white;
+  margin-top: 20px;
+  padding: 5px 14px;
+  font-size: 15px;
+  margin-left: -40px;
+}
+
+/* -- */
+.getin__map {
+  margin-left: -100px;
+}

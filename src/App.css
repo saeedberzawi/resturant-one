@@ -1,38 +1,388 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  box-sizing: border-box;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+/* ---------------------- */
+/* => الشريط الجانبي */
+::-webkit-scrollbar {
+  width: 15px;
+}
+/* track => شريط المرر */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  margin-block: 0.5rem;
+  background: var(--color-header);
+}
+/* thumb => المرر */
+::-webkit-scrollbar-thumb {
+  border-radius: 100vh;
+  background: var(--color-header);
+  border: 0.25em solid black;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  /* height: 100%; */
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+/* --------------- */
+/* menu page setting */
+.cici {
+  height: 200px;
+}
+.coco {
+  font-size: 50px;
+  font-family: var(--font-family);
+  color: var(--color-header);
+  margin: 0px auto 120px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shake {
+  position: absolute;
+  margin: -150px 20% 100px 70%;
+  padding: 10px 20px;
+  width: 200px;
+  border: none;
+  font-size: 20px;
+  background: #fafafa;
 }
+/* menu page media query */
+@media (max-width: 750px) {
+  .coco {
+    font-size: 40px;
+  }
+}
+@media (max-width: 750px) {
+  .shake {
+    font-size: 15px;
+    padding: 5px 5px;
+    width: 130px;
+    margin: -110px 20% 100px 60%;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    width: 90%;
+    margin: auto 5%;
+  }
+}
+/* ------------------ */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* --------------------------- */
+/* home page */
+/* ------------------------------------------------------------ header */
+@media (max-width: 554px) {
+  .main_page {
+    width: 100%;
+  }
+  .slide__img {
+    height: 70vh;
+  }
+  .slice__head {
+    font-size: 20px;
+    margin-top: -350px;
+    /* text-align: center; */
+    width: 100%;
+    margin-left: 10px;
+  }
+  .slice__head::after {
+    opacity: 0.5;
+  }
+  .slice__pargraph {
+    font-size: 13px;
+    width: 95%;
+    margin-top: -260px;
+    margin-left: 10px;
+  }
+}
+/* ------------------------------------------------------------ award */
+@media (max-width: 554px) {
+  .award {
+    font-size: 40px;
+  }
+  .sli {
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  .sli-track {
+    width: calc(100px * 24);
+  }
+  .slipjp img {
+    width: 80px;
+    height: 80px;
+  }
+  .bg__head {
+    left: 34.5%;
+    font-size: 18px;
+  }
+  .bg__header {
+    font-size: 20px;
+    text-align: center;
+    left: 10%;
+  }
+}
+/* ------------------------------------------------------------ chef */
+@media (max-width: 554px) {
+  .chef__text {
+    margin-top: -10px;
+    font-size: 35px;
+  }
+  .chef__box {
+    flex-direction: column;
+  }
+}
+/* ------------------------------------------------------------ imgs */
+@media (max-width: 554px) {
+  .all {
+    flex-direction: column;
+  }
+  .first {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .first div h2 {
+    font-size: 30px;
+  }
+  .first div p {
+    margin-top: -7px;
+    font-size: 20px;
+  }
+  .imagefilter {
+    grid-template-columns: repeat(2, auto);
+    margin: 25px auto;
+  }
+  .imagefilter img {
+    width: 160px;
+  }
+  .second {
+    margin: 0;
+  }
+  .second img {
+    width: 300px;
+  }
+  .second h2 {
+    font-size: 30px;
+    /* margin: 0 auto; */
+  }
+  .second p {
+    font-size: 20px;
+    margin-top: 2px;
+  }
+  .custom__bg {
+    height: 50vh;
+  }
+  .bg__heado {
+    left: 34.5%;
+    font-size: 18px;
+  }
+  .bg__headedo {
+    font-size: 20px;
+    text-align: center;
+    left: 10%;
+  }
+}
+/* ---------------------------------------------------- special */
+@media (max-width: 554px) {
+  .dotot {
+    display: none;
+    margin-top: -30px;
+    left: 10px;
+    height: 45vh;
+  }
+  .maindish {
+    /* display: none; */
+    flex-direction: column;
+  }
+  .dish {
+    height: 300px;
+    width: 250px;
+  }
+  .dish img {
+    width: 200px;
+    left: 100px;
+    top: 10px;
+  }
+  .dish__did {
+    top: 250px;
+    left: 30px;
+    width: 150px;
+  }
+  .dish__fid {
+    top: 230px;
+  }
+  .tab__m button {
+    width: 150px;
+    /* display: none; */
+    margin: 50px 25%;
+    font-size: 15px;
+    padding: 5px 5px;
+  }
+}
+/* ------------------------------------------------------------ video */
+@media (max-width: 554px) {
+  .vis {
+    width: 90%;
+    margin: 0px 5%;
+  }
+  .sas {
+    display: flex;
+    flex-direction: column;
+  }
+  .sas h2 {
+    font-size: 20px;
+    width: 150px;
+  }
+  .whiteman::after,
+  .sas__btn::after,
+  .balckman::after {
+    display: none;
+  }
+  .sas video {
+    width: 100%;
+  }
+  .sis {
+    flex-direction: column-reverse;
+  }
+}
+/* ------------------------------------------------------------ reservation */
+@media (max-width: 554px) {
+  .reservation {
+    /* display: none; */
+    height: 160vh;
+    width: 90%;
+  }
+  .reservation h2 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .weh {
+    /* display: none; */
+    flex-direction: column-reverse;
+  }
+  /* .wel {
+    display: flex;
+    flex-direction: column-reverse;
+  } */
+  .wel__text {
+    display: none;
+    /* width: 400px; */
+    font-size: 10px;
+    margin-left: 50px;
+  }
+  .wel__text p {
+    font-size: 12px;
+    width: 200px;
+  }
+  .wel__imga img {
+    height: 300px;
+    width: 300px;
+    margin-left: -130px;
+    /* display: none; */
+  }
+  .tabe {
+    /* display: none; */
+    width: 95%;
+    /* margin-left: 6%; */
+    margin-right: 7%;
+    height: 80vh;
+  }
+  .bg__he {
+    left: -10.5%;
+    font-size: 18px;
+  }
+  .bg__hea {
+    font-size: 20px;
+    text-align: center;
+    left: 10%;
+  }
+  .overlay02 {
+    background-color: rgb(0 0 0 / 10%);
+  }
+}
+/* ------------------------------------------------------------ customer */
+@media (max-width: 554px) {
+  .coscos img {
+    width: 80px;
+  }
+  .coscos p {
+    display: none;
+    font-size: 13px;
+    width: 180px;
+    height: 400px;
+  }
+  .coscos h2 {
+    font-size: 14px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ------------------------------------------------------------ button move up */
+.upmove {
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  color: black;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  /* font-family:var(--font-header); */
+  z-index: 4;
+  background: var(--color-header);
+  border-radius: 20%;
+  border: 3px solid black;
+  box-shadow: 0px 0px 6px white;
+}
+@media (max-width: 554px) {
+  .upmove {
+    right: 10%;
+    bottom: 360px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 12px white;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* -------------- */
+/* @media (max-width: 554px) {
+  headero
+  .main_page {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  award
+  .aw__wi {
+    display: none;
   }
-}
+  chef
+  .chef {
+    display: none;
+  }
+  special
+  .tab__m {
+    display: none;
+    width: 90%;
+    margin: 0px;
+  }
+  videoo
+  .vis {
+    display: none;
+  }
+  reservation
+  .reservation {
+    width: 90%;
+    margin:0px;
+    display: none;
+  }
+  customer
+  .wasa {
+    display: none;
+  }
+} */

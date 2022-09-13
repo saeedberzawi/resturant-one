@@ -1,0 +1,66 @@
+.menulist {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.menulist__imge {
+  width: 125px !important;
+}
+.menulistsec__header {
+  font-size: 25px;
+  margin-top: -15px;
+}
+.menulistsec__text {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.menulist__text {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--color-header);
+}
+.menulist__text span {
+  font-size: 25px;
+}
+
+/* ----------------- swiper */
+.mySwiperles {
+  margin-top: 70px;
+  width: 95%;
+  /* background-color: rgb(133, 133, 184); */
+  height: 90vh;
+}
+
+@media (max-width: 750px) {
+  .menulist {
+    gap: 40px;
+  }
+  .menulistsec__header {
+    font-size: 15px;
+    /* margin-top: -15px; */
+  }
+  .menulistsec__text {
+    display: none;
+    font-size: 10px;
+  }
+
+  .menulist__text {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-header);
+  }
+  .menulist__text span {
+    font-size: 15px;
+  }
+  .menulist__imge {
+    width: 100px !important;
+  }
+  /* -------- */
+  .mySwiperles {
+    width: 90%;
+    gap: 40px;
+  }
+}

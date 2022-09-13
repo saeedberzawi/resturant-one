@@ -1,0 +1,46 @@
+.sociai {
+  position: relative;
+}
+.social {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  right: 20px;
+  /* background-color: white; */
+  border-radius: 100vh;
+  width: 2.5rem;
+  height: 5rem;
+  border: 5px solid white;
+  box-shadow: 0px 0px 12px black;
+  top: 140px;
+  right: 55px;
+  z-index: 3;
+}
+.social::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 3.5rem;
+  background-color: black;
+  z-index: -4;
+  right: 1px;
+}
+.social::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 3.5rem;
+  left: 1px;
+  background-color: black;
+  z-index: -4;
+}
+
+@media (max-width: 750px) {
+  .social {
+    right: 10%;
+    top: 110px;
+  }
+}

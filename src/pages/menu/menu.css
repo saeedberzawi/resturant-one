@@ -1,0 +1,38 @@
+.menulo__video {
+  background: black;
+  height: 50vh;
+}
+.menulo__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wekimeki {
+  transform: translatex(15%);
+  margin: 50px 25%;
+}
+.wekimeki button {
+  font-size: 20px;
+  padding: 5px 10px;
+  /* width: 100px; */
+  margin-left: 15px;
+}
+
+@media (max-width: 750px) {
+  .wekimeki {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 40px 5%;
+    transform: translatex(0%);
+  }
+  .wekimeki button {
+    margin-left: 5px;
+  }
+  .zizi {
+    position: absolute;
+    margin-top: 110px;
+  }
+}

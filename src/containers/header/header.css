@@ -1,0 +1,68 @@
+.swiper {
+  width: 100%;
+}
+
+.slide__img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
+}
+.slice__head::after {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 2px;
+  background: black;
+  opacity: 0.7;
+  left: -50px;
+  top: -390px;
+  z-index: -1;
+  height: 940px;
+}
+.slice__head {
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  padding: 0 100px;
+  margin-top: -550px;
+  margin-left: 50px;
+  font-size: 40px;
+  color: white;
+}
+.slice__pargraph {
+  position: absolute;
+  margin-top: -480px;
+  margin-left: 230px;
+  font-size: 20px;
+  color: white;
+  width: 400px;
+  z-index: 1;
+  text-align: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+  margin-top: 80px;
+  width: 45px;
+  background: var(--color-header);
+  border-radius: 45%;
+}
+/* change the modul of arrow */
+/* .swiper-button-next,
+.swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next{
+  background-image: url(arrow-right.jpg);
+}
+.swiper-button-prev{
+  background-image: url(arrow-left.jpg);
+} */

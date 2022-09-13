@@ -1,0 +1,31 @@
+.upheader {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  background: white;
+  z-index: 3;
+  padding: 10px 50px;
+  height: 50px;
+  position: fixed;
+  width: 55%;
+  margin: -637px 15% 0 29%;
+  box-shadow: 0 0 12px black;
+  border-radius: 0% 0px 20% 20%;
+  z-index: 3;
+}
+.upheader li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-family: var(--font-family);
+}
+/* ------- */
+.upheader li a:hover {
+  color: var(--color-header);
+}
+
+@media (max-width: 750px) {
+  .upheader {
+    display: none;
+  }
+}

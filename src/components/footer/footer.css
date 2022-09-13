@@ -1,0 +1,137 @@
+.footer {
+  margin-top: 0px;
+  color: white;
+}
+
+/* --------------------- sec1 */
+.footer__sec1 {
+  background: var(--color-header);
+  text-align: center;
+  height: 90px;
+  /* font-family: var(--font-header); */
+}
+.footer__sec1 h1 {
+  padding: 20px;
+  color: black;
+}
+
+/* ----------------------- sec2 */
+.footer__sec2 {
+  background: black;
+  display: flex;
+  justify-content: center;
+  /* align-items: start; */
+  gap: 80px;
+  padding: 60px 0px;
+  opacity: 0.9;
+  /* background-image: url(../../assets/bg_1.jpg); */
+}
+.footer__sec2 h2 {
+  font-size: 25px;
+  font-family: var(--font-header);
+  color: var(--color-header);
+}
+/* .footer__sec2 p{
+} */
+.sec2__one {
+  width: 15%;
+  /* background: red; */
+}
+.sec2__one ul {
+  margin-top: 5px;
+  display: flex;
+  gap: 15px;
+}
+/* -------------- */
+/* .sec2__two {
+} */
+.sec2__two-pp {
+  display: flex;
+  gap: 15px;
+}
+
+/* -------------- */
+.sec2__four {
+  width: 15%;
+  /* background: red; */
+}
+.papa {
+  margin-top: 10px;
+  width: 280px;
+  height: 40px;
+  color: white;
+  background: #313131;
+  border: none;
+  font-size: 18px;
+  text-indent: 18%;
+}
+.poop {
+  margin-top: 10px;
+  width: 280px;
+  height: 40px;
+  background: var(--color-header);
+  font-size: 18px;
+  font-weight: bold;
+}
+/* -------- */
+
+/* --------------------- sec3 */
+.footer__sec3 {
+  background: var(--color-header);
+  text-align: center;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer__sec3 p {
+  font-family: var(--font-header) !important;
+}
+.footer__sec3 p a {
+  text-decoration: none;
+  font-family: var(--font-header);
+  color: rgb(16, 120, 143);
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  /* text-shadow:  0px 0px 7px black; */
+}
+
+@media (max-width: 750px) {
+  .footer {
+    width: 100%;
+  }
+  .footer__sec1 {
+    font-size: 8px;
+    height: 60px;
+  }
+  .footer__sec1 h1 {
+    font-size: 15px;
+    padding: 17px 0px;
+    color: black;
+  }
+  .footer__sec2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    /* text-align: center; */
+  }
+  .sec2__one{
+    width: 90%;
+    text-align: center;
+  }
+  .sec2__one ul {
+    justify-content: center;
+    align-items: center;
+  }
+  .sec2__two h2{
+
+    /* width: 90%; */
+    text-align: center;
+  }
+  .sec2__four{
+    width: 90%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,34 @@
+.kosumak {
+  margin-top: 80px;
+  text-align: center;
+}
+.kosumak h2 {
+  font-family: var(--font-header);
+  color: var(--color-header);
+}
+.maghrab {
+  height: 70vh;
+  width: 80%;
+  margin: 0 10%;
+}
+.coscos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background: red; */
+  height: 60vh;
+}
+.coscos img {
+  width: 140px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+.coscos p {
+  width: 300px;
+  margin: 0 auto;
+}
+.coscos h2 {
+  text-align: center;
+  margin: 20px auto 10px;
+}

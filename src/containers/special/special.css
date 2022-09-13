@@ -1,0 +1,82 @@
+.tab__m {
+  margin: 100px auto;
+  width: 90%;
+  /* background: red; */
+}
+.tab__m h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  font-family: var(--font-header);
+  color: var(--color-header);
+}
+.tab__m button {
+  /* position: absolute; */
+  margin: -10px 10% 20px 70%;
+  right: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  width: 200px;
+  border: none;
+  font-size: 20px;
+  background: #fafafa;
+}
+
+/* ------------ */
+.maindish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.dish {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background: #fafafa;
+  border: none;
+  box-shadow: 0px 0.3px 1.9px black;
+  border-radius: 2%;
+}
+.dish:hover {
+  transform: translateY(-30px);
+  transition: 1s;
+  color: red;
+}
+.dish img {
+  width: 300px;
+  position: absolute;
+  left: 50px;
+  top: 40px;
+}
+.dish__did {
+  position: absolute;
+  top: 350px;
+  right: 100px;
+  font-size: 20px;
+}
+.dish__fid {
+  position: absolute;
+  right: -30px;
+  top: 350px;
+  /* margin-right: 20px; */
+  background: black;
+  color: white;
+  padding: 15px 0 0;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.dish__fid span {
+  font-size: 17px;
+}
+
+/* ------- */
+.dotot {
+  z-index: -1;
+  position: absolute;
+  margin-top: 10px;
+  left: 194px;
+}
