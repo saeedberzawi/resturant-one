@@ -7,14 +7,14 @@ import {
   Special,
   Videos,
 } from "../../containers";
-import { Award, Social,UpHeader } from "../../components";
+import { Award, Social, UpHeader } from "../../components";
 import "./home.css";
 
 const Home = () => {
   return (
     <div className="Home">
       <Header />
-      <UpHeader/>
+      <UpHeader />
       <Social />
       <Award />
       <Cheif />

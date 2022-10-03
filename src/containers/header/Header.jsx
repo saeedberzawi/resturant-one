@@ -10,13 +10,18 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 import { home1, home2, home3, home4 } from "./imports";
+
+// import MetaTa from "../../utils/MetaTa"
+// import datat from '../../utils/info.json'
+import { Helmet } from "react-helmet";
+
 import "./header.css";
 
 const Header = () => {
   return (
     <div className="main_page">
       <>
-        <Swiper 
+        <Swiper
           loop
           spaceBetween={30}
           centeredSlides={true}
@@ -34,7 +39,12 @@ const Header = () => {
           <SwiperSlide>
             <img src={home1} alt="" className="slide__img" />{" "}
             <div className="slice__main">
+              {/* <MetaTa description={datat.homePage} /> */}
               <h1 className="slice__head">Welcome To Our Restaurat</h1>
+              <Helmet>
+                {/* <title>UNION-BRZ Rusturant</title> */}
+                <meta name="description" content="about we do over day " />
+              </Helmet>
               <p className="slice__pargraph">
                 Lorem ipsum dolor. Obcaecati natus iure reprehenderit ea maiores
                 harum, fugit perspiciatis? Nesciunt at excepturi consequuntur
