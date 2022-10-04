@@ -4,6 +4,7 @@ import "./cheif.css";
 // aos
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 
 const Cheif = () => {
   // aos
@@ -12,12 +13,19 @@ const Cheif = () => {
   }, []);
   return (
     <div className="chef" id="chef">
-      <h3 className="chef__header" data-aos="flip-up">Chef</h3>
-      <h1 className="chef__text" data-aos="flip-up">Our Master Chef</h1>
+      <h3 className="chef__header" data-aos="flip-up">
+        Chef
+      </h3>
+      <h1 className="chef__text" data-aos="flip-up">
+        Our Master Chef
+      </h1>
       <div className="chef__box">
         <div className="box" data-aos="fade-right">
           <img src={chef4} alt="" className="box__image" />
           <div className="box__content">
+            <Helmet>
+              <meta name="description" content="union brz chef" />
+            </Helmet>
             <h2 className="content__header">John Gustavo</h2>
             <h2 className="content__head">CEO, Co Founder</h2>
             <p className="content__text">
@@ -37,7 +45,7 @@ const Cheif = () => {
             </p>
           </div>
         </div>
-        <div className="box"data-aos="fade-left">
+        <div className="box" data-aos="fade-left">
           <img src={chef3} alt="" className="box__image" />
           <div className="box__content">
             <h2 className="content__header">Alfred Smith</h2>
